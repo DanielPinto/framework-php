@@ -1,0 +1,10 @@
+{
+    "name": "daniel/framework-php",
+    "authors": [
+        {
+            "name": "Daniel Pinto",
+            "email": "daniel@daspin.com"
+        }
+    ],
+    "require": {}
+}
