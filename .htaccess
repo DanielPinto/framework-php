@@ -1,2 +1,7 @@
-redirect 301 http://localhost:8000
-http://localhost:8000/public
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+RewriteRule ^((?!public/).*)$ framework-php/public/$1 [L,NC]
+
